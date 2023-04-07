@@ -3,8 +3,22 @@ public class Unit01_VariableAndValue {
 //        worksWithInterger();
 //        worksWithVariables();
 //        worksWithDouble();
-        worksWithCharacters();
+//        worksWithCharacters();
+//        worksWithBoolean();
+        printIntergerList();
     }
+
+    // A comparison expression, a proposition, a statement will have 2 states: true or false -> boolean (1 bit, 1 byte)
+    public static void worksWithBoolean() {
+        boolean marriedStatus = false;
+        if (marriedStatus)
+            System.out.println("Đã cưới");
+        else
+            System.out.println("Chưa cưới");
+
+        System.out.println("Luôn có hi vọng");
+    }
+
 
     // static only works with static -  learn in after lesson
     public static void worksWithVariables() {
@@ -67,12 +81,19 @@ public class Unit01_VariableAndValue {
         // Save name, a line, a paragraph, ... consists of many characters combined
         // In java, processing in the string must use the function, because ArrayName isn't primitive
         // Java provides a new data type for storing strings
-        // Strings for storage, names for complex things, co-characters, type Objects
+        // String for storage, names for complex things, co-characters, type Objects
         String name = "Nguyễn Bảo Chính";
         System.out.println("name = " + name);
 
         System.out.println("1st letter in my name: " + name.charAt(1));
         System.out.println("my name as in a lowercase form: " + name.toLowerCase());
 
+    }
+
+    public static void printIntergerList() {
+        System.out.println("The list of 100 first integers");
+
+        for (int i = 1; i <= 100; i++)
+            System.out.print(" " + i);
     }
 }
