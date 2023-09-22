@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="891f54b5-8e94-41c8-9dc1-7ad6ce30905a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Object/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Object/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit4_RecipeForCreateAJavaApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit5_Static.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit6_Input_TryCatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit7_PrimitiveArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit8_ObjectArray/ObjectArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit8_ObjectArray/SortingAnObjectArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit8_ObjectArray/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ptit/util/MyToys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Unit10_Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Models/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Models/Dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit03_ObjectAndClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit03_ObjectAndClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Unit02_FunctionAndMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit02_FunctionAndMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Unit03_ObjectAndClassVersion2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit8_ObjectArray/SortingAnObjectArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit8_ObjectArray/SortingAnObjectArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Unit9_Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Unit9_Sorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +42,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper",
+    "settings.editor.selected.configurable": "editing.templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Theory.Unit9_Sorting" />
       <recent name="Theory" />
       <recent name="Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortingAnObjectArray">
+  <component name="RunManager" selected="Application.Unit9_Sorting">
     <configuration name="ObjectArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Theory.Unit8_ObjectArray.ObjectArray" />
       <module name="LearningJavaDeveloper" />
@@ -105,19 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unit5_Static" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Unit5_Static" />
-      <module name="LearningJavaDeveloper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Theory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unit7_PrimitiveArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Theory.Unit7_PrimitiveArray" />
       <module name="LearningJavaDeveloper" />
@@ -131,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unit9_Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Unit9_Sorting.Unit9_Sorting" />
+      <module name="LearningJavaDeveloper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Theory.Unit9_Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Unit9_Sorting" />
         <item itemvalue="Application.SortingAnObjectArray" />
         <item itemvalue="Application.ObjectArray" />
         <item itemvalue="Application.Unit7_PrimitiveArray" />
         <item itemvalue="Application.State" />
-        <item itemvalue="Application.Unit5_Static" />
       </list>
     </recent_temporary>
   </component>
