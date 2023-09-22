@@ -72,8 +72,6 @@ public class Unit02_FunctionAndMethod {
      * bắt buộc return xxx-value ra ngoài qua tên hàm
      * Tên hàm là một biến được gán value từ return */
 
-
-
     // Loại 4: Có input và có cả output: (...) name_function(...)
     /* Không nên scanf vì đã có input
      * không nên printf vì đã có output

@@ -57,4 +57,33 @@ public class Dog {
     public int getYob(){
         return yob;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYob(int yob) {
+        this.yob = yob;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    @Override // chữ này không nhầm với Overload
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", yob=" + yob +
+                ", weight=" + weight +
+                '}';
+    }
 }
