@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="891f54b5-8e94-41c8-9dc1-7ad6ce30905a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Unit10_Management.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/StudentManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit8_ObjectArray/SortingAnObjectArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit8_ObjectArray/SortingAnObjectArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Unit9_Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit9_Sorting/Unit9_Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit9_Sorting/Unit9_Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit9_Sorting/Unit9_Sorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Unit10_Management.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Theory.Unit9_Sorting" />
@@ -57,7 +55,7 @@
       <recent name="Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unit9_Sorting">
+  <component name="RunManager" selected="Application.StudentManagement">
     <configuration name="ObjectArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Theory.Unit8_ObjectArray.ObjectArray" />
       <module name="LearningJavaDeveloper" />
@@ -84,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="State" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Object.State" />
+    <configuration name="StudentManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Unit10_StudentManagement.StudentManagement" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Object.*" />
+          <option name="PATTERN" value="Theory.Unit10_StudentManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StudentManagement" />
         <item itemvalue="Application.Unit9_Sorting" />
         <item itemvalue="Application.SortingAnObjectArray" />
         <item itemvalue="Application.ObjectArray" />
         <item itemvalue="Application.Unit7_PrimitiveArray" />
-        <item itemvalue="Application.State" />
       </list>
     </recent_temporary>
   </component>
