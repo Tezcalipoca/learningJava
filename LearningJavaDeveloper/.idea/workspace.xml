@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="891f54b5-8e94-41c8-9dc1-7ad6ce30905a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/StudentManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit9_Sorting/Unit9_Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Unit9_Sorting/Unit9_Sorting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Shelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Unit10_Management.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Unit10_StudentManagement/StudentManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ptit/util/MyToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ptit/util/MyToys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

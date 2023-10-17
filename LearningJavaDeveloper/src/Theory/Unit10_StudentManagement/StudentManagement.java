@@ -1,17 +1,19 @@
 package Theory.Unit10_StudentManagement;
 
+import ptit.util.MyToys;
+
 import java.util.Scanner;
 
 public class StudentManagement {
+    Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         int choise; // Lưu lựa chọn menu gõ từ bàn phím
         Shelf shelfPTIT = new Shelf("BLACK", "PTIT");
 
         do {
             printMenu();
-            System.out.println("Please input your choise");
-            choise = Integer.parseInt(scanner.nextLine());
+            choise = MyToys.inputAnInterger("Mời bạn nhập lựa chọn: ");
             switch (choise){
                 case 1:
                     shelfPTIT.inputStudentList();
@@ -20,10 +22,9 @@ public class StudentManagement {
                     shelfPTIT.printStudentList();
                     break;
                 case 3:
-
+                    shelfPTIT.searchStudent();
                     break;
                 case 4:
-
                     break;
                 case 5:
 
@@ -60,7 +61,7 @@ public class StudentManagement {
         /* - Lỗi nhập sai định dạng
          *  - Nhập ngoài biên
          *  - Chỉ thoát khi chọn quit */
-        System.out.println("Welcome to PTIT-HCM Academy");
+        System.out.println("Welcome to PTIT-HCM Academy!");
         System.out.println("1. Add a student profile");
         System.out.println("2. Print Student list");
         System.out.println("3. Search a student list");
@@ -68,4 +69,6 @@ public class StudentManagement {
         System.out.println("5. Remove a student"); // Thao tác xóa cần hết sức cẩn thận, xóa không hẳn là xóa, mà xóa là ẩn
         System.out.println("6. Quit");
     }
+
+
 }

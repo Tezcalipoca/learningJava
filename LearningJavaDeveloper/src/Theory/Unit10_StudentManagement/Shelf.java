@@ -56,4 +56,21 @@ public class Shelf {
             arr[i].showProfile();
         }
     }
+    public void searchStudent(){
+        //search là quét từ trái sang phải để lấy từng s[i] ra để xem mã sinh viên là bao nhiêu, so sánh với mã muốn tìm
+        // -> Giống như sv[i].getMaSV(), nếu có thì báo tìm thấy, ngược lại thì báo not found.
+        System.out.print("input the id that you want to search: ");
+        String id = scanner.nextLine();
+        for (int i = 0; i < count ; i++) {
+            if (arr[i].getId().equalsIgnoreCase(id)){
+                // Tìm thấy tại vị trí thứ i
+                System.out.println("Student found! Here he/she is");
+                arr[i].showProfile();
+                return; // tìm thấy thì dừng hàm luôn
+            }
+        }
+        // Nếu không tìm thấy thì thông báo
+        System.out.println("Student not found!!");
+        // Cách 2: Dùng biến flag nếu thấy và không, if() in ra câu thông báo
+    }
 }

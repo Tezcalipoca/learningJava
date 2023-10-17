@@ -1,5 +1,7 @@
 package Theory.Unit10_StudentManagement;
 
+import java.util.Scanner;
+
 public class Student {
     private String id;
     private String name;
@@ -52,4 +54,5 @@ public class Student {
     public void showProfile(){
         System.out.printf("|%8s|%-25s|%4d|%4.1f|\n",id, name,yob, gpa);
     }
+
 }
