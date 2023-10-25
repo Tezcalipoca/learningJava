@@ -1,0 +1,58 @@
+--------------------------------------- CUỘC ĐUA KỲ THÚ -------------------------------------
+CUỘC ĐUA KỲ THÚ diễn ra giữa các ứng viên Dog, Cat, Hamster
+Thông tin các ứng viên bao gồm: tên, năm sinh, cân nặng
+ - Dog: Chạy tối đa 40 km/h
+ - Cat: Chạy tối đa 50 km/h
+ - Hamster: Chạy tối đa 10 km/h
+
+Hãy in bảng thành tích của từng ứng viên
+
+* Hắc não: Sắp xếp bảng thành tích chạy của các ứng viên
+* Phân tích bài toán:
+ - Chạy tối đa? Tốc độ chạy biến đỏi trong từng lần chạy, hàm trả về giá trị biến đổi
+ -> Không return giá trị "Cứng - hard code" được.
+ -> Hàm random() trong toán học, sinh số ngẫu nhiên.
+ - Chạy là hành động.
+
+ - Dog (tên, năm sinh, cân nặng), hành động run()
+ - Cat (tên, năm sinh, cân nặng), hành động run()
+ - Hamster (tên, năm sinh, cân nặng), hành động run()
+ - Rắn (tên, năm sinh, cân nặng), hành động run()
+  4 khuôn vì 4 đứa khác nhau rõ ràng, nếu giống gọi là một con xzy nào đó rồi.
+ - Sắp xếp: Chúng phải chung mảng,
+    Dog is a kind of Cat -> Vớ vẩn
+    Cat is a kind of Hamster -> Vớ vẩn
+    ... Vớ vẩn quanh 3 thứ
+ - Dog, Cat, Hamster must be kind of ???
+ Câu is a tự nhiên đọc 1 chiều, tìm được ??? coi như sort đã xong
+ nếu những thứ khác biệt ở chung được với nhau, thì sẽ xử lý được data
+
+ Dog, Cat, Hamster is an Animals
+ Elephan, tiger, lion is an Animals
+ Dog, Cat, Hamster is a pet, hay hơn, gom nhóm tốt hơn, phù hợp hơn
+
+
+
+ hình như đang nói về phân loại mọi thứ trong cuộc sống -> nó đó
+ Dog, Cat, Animals ->
+ Elephan, tiger, lion ->
+ Person ->
+ Cây cối ->
+ -> Thực thể sống/sinh vật/creature
+
+ + Sỏi đá/sông suối -> Vật chất, thực thể, "thing" vạn vật/OBJECT
+
+ LOÀI CHI BỘ NGÀNH
+
+  Xe máy, Xe hơi, Xe tải, Xe đầu kéo, Xe khách, Máy bay, Tàu hỏa, Tàu thủy, Du thuyển -> is a Vehicle
+  Ghim bấm, kẹp giấy, keo dán, bút chì, bao tập, bìa lá, folder, hộp nhựa cứng, mực, giẻ chùi bảng -> Văn phòng phẩm
+  Cá đông lạnh, tôm đông lạnh, chân gà đông lạnh, ... -> Thực phẩm đông lạnh
+
+ĐẶT TÊN VÀ PHÂN LOẠI, CÁCH CON NGƯỜI QUẢN LÝ INFO XUNG QUANH MÌNH
+MANH MỐI ĐỂ PHÂN LOẠI ABSTRACT: NÓI VỀ OBJECT XP TỪ CLASS NÀO ĐÓ MÀ NÓ RÕ RÀNG, CỤ THỂ LUÔN THÌ KHÔNG PHẢI ABSTRACT
+                                NÓI VỀ OBJECT MÀ CẦN GIẢI THÍCH THÊM -> ABSTRACT
+  - tao với mày đi mua thú cưng đi!!! -> hỏi thêm con gì?
+  - tao với mày đi mua con chó -> cụ thể
+  - tao với mày đi mua phương tiện giao thông đi, dùng phương tiện giao thông công cộng để di chuyển. Cái gì?
+    + car -> cụ thể
+  - vẽ cho t cái hình, shape -> abstract

@@ -1,0 +1,66 @@
+ 1. Vùng nhớ (trong RAM) CON to, bao trùm vùng nhớ CHA với ý nghĩa:
+    + Con thừa hưởng tất cả đồ của cha (trong vùng new có gì th được xài cái đó).
+    + Cha là nền tảng, móng nhà, BASE để con thoải mái vùng vẫy, mở rộng thêm (extends).
+    + Vùng nhớ cha mở rộng/extends thêm một chút thành vùng nhớ CON => "Cha sẽ là cánh chim, đưa con bay thật xa"
+    + Ngôi nhà cũ, cơi nới, thêm gác lửng, extends, thành nhà mới
+
+    * Vùng nhớ CON = Vùng nhớ CHA       +       extends (mở rộng thêm)
+                     super()
+                     ~ Thừa kế hết của cha => Di truyền
+                                                @Overide hàm CON trùng tên hàm CHA
+                     Biết lái xe                Cũng biết lái xe
+                                        +       Con có thêm điều khác cha => Biến dị
+
+ 2. Chốt con trỏ:
+    - Khai KHUÔN = new KHUÔN(...): chấm (.) xổ ra tất cả của KHUÔN.
+    - Khai CHA = new CHA(...): chấm (.) xổ ra tất cả của cha.
+    - Khai CON = new CON(...): chấm (.) xổ ra tất cả của con:
+        + Xổ ra tất cả của cha (thừa kế) -> Di truyền
+        + Xổ tất cả phần @Overide -> Biến dị
+        + Xổ ra tất cả của riêng con (extends) -> Biến dị
+    - Con thêm hàm gì đó mà không có @Overide, CHA không biết ~ Ngoài đời: CON vào SG làm gì thì CHA không biết.
+    - Khai CHA = new CON(...): Con là một IS A version of CHA: Chấm (.) xổ ra:
+        + Xổ tất cả của CHA (thừa kế - di truyền)
+        + Không xổ ra @Overide vì trùng tên hàm.
+        + Không xổ ra những gì của riêng con, chấp việc new CON, chấp việc trong RAM đã có biến dị
+        Lý do: Đang dùng con trỏ cha, thì chỉ xổ kiểu CHA, con trỏ chỉ đến vùng super(CHA nằm trong CON, không chịu nhìn xuống dưới extends ).
+    - Một thỏa hiệp khi chạy nếu thấy CON có hàm trùng tên thì ưu tiên con, nếu không trùng tên thì không thèm thấy.
+    - Để CHA thấy được hàm dị biệt, hàm của riêng con thì phải Drift con trỏ, giống như kéo giãn sợi dây thun -> Ép kiểu
+    Có 2 cách ép kiểu như trong Class ParentChild nhưng bản chất là 1, kéo xuống đáy vùng new, giữ lại tọa độ new CON, muốn chấm gì chấm, trở lại bình thường CON
+
+3.
+    - Hiển nhiên hỏi CHA những gì CON làm (hàm riêng của CON), thì CHA không trả lời được.
+    -> Khai CHA mà new CON thì chắc chắn cha chỉ biết những gì CHA và CON tương đồng, thứ mà CON có thêm thì CHA không biết, CHA muốn biết thì ghé nhà CON, kéo dài con trỏ.
+    List <Student> arr = new ArrayList();
+     CHA                        CON
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+TỔNG KẾT KẾ THỪA LV1: CHA CỤ THỂ, CON CỤ THỂ (CONCRETE)
+    - CHA có đầy đủ code để chạy
+    - CON có đầy đủ code để chạy, thêm thứ mà của riêng CON mà CHA không có (đặc điểm, hành vi), @Overide
+CÂU HỎI:
+ - 1 CHA có thể có nhiều CON không?
+ - 1 CON có thể có nhiều CHA không?
+ - Em không dùng kế thừa, em dùng if được không?
+
+ * LEVEL2: CHA TRỪU TƯỢNG, CON CỤ THỂ
+
+1. Muốn chế tạo nhiều khuôn, dùng tư duy Khuôn -> Nhân bản obj1, nhân bản obj2, ...
+2. Muốn chế tạo nhanh khuôn, ta dùng kế thừa, dùng 1 cái khuôn nào có trước độ lại (biến dị), xài lại cái cũ + cái mới
+3. Ta cần chế tạo nhiều khuôn, để từ đó ra Object cho nhanh
+-> Vẫn là kế thừa, vẫn dùng lại khuôn nào đó, vấn đề là dùng lại bao nhiêu khuôn để làm nhiều khuôn mới
+-> Mục tiêu đa dạng obj nhưng cần nhanh, mà lại chung phiên bản, tương đồng nhau.
+-> Ta cần một khuôn tổ để từ đó đẻ ra được nhiều khuôn con khác nhau
+-> Đám khác nhau về chung một nhà, chung mảng, sắp xếp sẽ yên vui.
+-> Sắp xếp mảng các object khá khác nhau.
+VUÔNG, TRÒN, CHỮ NHẬT CHUNG 1 NHÀ.
+VUÔNG, TRÒN, CHỮ NHẬT IS A KIND OF ...???
+
+VUÔNG LÀ CHỮ NHẬT, CHẾ TẠO VUÔNG RẤT NHANH.
+TGV LÀ TG, CHẾ TẠO TGV RẤT NHANH.
+V, TR, CN LÀ MỘT CÁI GÌ ĐÓ, CÁ LÀ CHẾ TẠO ĐÁM NÀY SẼ RẤT NHANH
+v, TR, CN, TG, HBH, oval, ... đều là hình học (shape). Phàm là hình học sẽ có đường nét, màu sắc, diện tích, chu vi
+
+SHAPE: Khuôn tổ, từ đây ra cả đám khuôn mới
+
+

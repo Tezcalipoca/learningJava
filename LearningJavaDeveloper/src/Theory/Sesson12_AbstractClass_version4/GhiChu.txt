@@ -1,0 +1,55 @@
+1. Có 2 loại khuôn/class:
+    a. Khuôn/class hoàn chỉnh, không chứa hàm abstract, concrete cụ thể, rõ ràng, rời rạc.
+        - Các hành động đủ code
+        - Nếu có con, con không cần implement gì cả, cha đã đủ code rồi. con thích thì @Override
+    b. Khuôn/class không hoàn chỉnh/chứa hàm abstract, hàm không code,
+        - bản thân nó không hoàn chỉnh, vì chỉ chứa tên hàm nhưng không chứa code, nó vẫn có quyền có hàm khác mà có code
+          (get, set)
+        - Về mặt lý thuyết, khi new Abs class thì khi chấm cái hàm không có code, KHÔNG CÓ CODE để chạy
+        - new CHA abs thì không có code để chạy!!!
+        - new Shape(...), new Pet(...) .run()   .paint()    .getArea() thì không có code lấy gì chạy
+        - Không new class có hàm Abstract vì không có code/ không hoàn thiện để chạy.
+2. Trừ khi nếu vẫn ngoan cố new abstract class thì ...
+3. Class abs:
+    - nếu nó có con, thì con có 2 phương án:
+        + vô sinh/không new/là abs luôn
+        + phải implement viết hết code cho hàm cha
+    - Giả sử ta chỉ focus vào phần IMPLEMENT hàm CHA, con @Override hết hàm abs của CHA, CON có quyền làm thêm dị biệt
+      như bình thường.
+4. Vùng nhớ của con, vùng new của CON sẽ chiếm như thế nào trong RAM (không care con kế thừa CHA trừu tượng hay cụ thể):
+    Bao luôn vùng nhớ cha để CON được kế thừa
+    - Vùng new của CHA, Super() không care CHA cụ thể hay trừu tượng
+    - Vùng mở rộng/extends:
+        + chứa phần dị biệt của con (hàm, biến, đặc điểm riêng của con).
+        + Phần @Override/con trùng tên hàm CHA - không bắt buộc nếu CHA cụ thể, vì đằng nào cũng có CHA đủ để xài.
+        + Phần @Override/con trùng tên hàm CHA - bắt buộc phải có nếu CHA là abs, cha không hoàn hảo, CON bắt buộc phải code
+5. Tổng kết công thức khi CON chơi với CHA trừu tượng:
+    CON = super()(~new CHA(...)) + @Override cho tất cả các hàm của cha
+6. Câu hỏi đặt ra: Làm sao để có 1 obj - vùng new trong OOP:
+    - Ta cần 1 khuôn/class
+    - Gọi new + phễu xin vùng RAM/clone vùng RAM từ khuôn + gọi phễu đổ vật liệu vào. new xong là có obj và tọa độ obj
+    - Đặt tên cho obj, biến obj trỏ vùng new
+    Ví dụ nếu ta cần 1 obj HCN:
+        + ta cần khuôn Rectangle
+        + new Rectangle(...)
+        + Rectangle r = new Rectangle(...)
+7. Liên quan đến hình học:
+    - Có những hình biết rõ nhóm con và nhóm cha như Vuông, Tròn, Tam giác thuộc class Shape
+    - Có những hình không biết gọi tên nhóm con, nhóm chi tiết, chỉ biết là hình (vẫn là Shape), S() làm sao, tính
+      bằng cách đo, vì m không là dạng hình quen thuộc, nếu quen thuộc thì ta đã đặt được tên nhóm con cho m
+    - Có xuất hiện những đối tượng lạc loài, không có hình dạng quen thuộc, hình cắt ngẫu nhiên, không biết xếp vào nhóm
+      nào ngoại trừ nhóm CHA
+8. Theo quan điểm lập trình, quan điểm obj, đã có 1 obj được tạo ra, có 1 hình mà không biết khuôn là gì mà chỉ biết nó
+    thuộc Khuôn cha (vì là hình học), ta sẽ có cách tạo obj vô định, không quen thuộc, không phân nhóm được, ta nhìn nó
+    theo dạng đúc từ khuôn cha, vì lúc này ta gọi nó là hình học, vậy nó phải xuất phát từ khuôn Shape, tức là new Shape
+
+    Dùng kĩ thuật mượn gió bẻ măng, mượn Shape tạo obj, vì ta thiếu 1 khuôn con cụ thể
+    Hình đó là obj con, vì nó là hình mà chưa rõ khuôn, ta sẽ new CHA + phần @Override, viết code đủ -> đảm bảo công thức
+    Tạo class mà không cần class riêng, mượn cha mà làm, class riêng mà không cần đề cập, gọi là class ẩn danh
+    -> Class Anonymous
+    -> Vẫn new được obj con của shape mà không cần 1 class con cụ thể, vậy thì vùng RAM này chính là đại diện cho một
+    class làm biếng, làm riêng/đặt tên, class ẩn danh Anonymous
+9. Khai CHA new CHA, Mượn gió bẻ măng, cha new đỡ cho con, mở rộng ra đi CON, viết code on the go, đừng quên chấm phẩy
+    mày làm biếng tạo class để clone cho nhanh, mày chơi trò new tao ngay, tao hỗ trợ vùng extends hoàn thiện code
+    @Override cho tao, ba sẽ là cánh chim, đưa con new on the go
+    -> Anonymous class, vùng RAM vẫn bự như làm class rời, làm biếng đặt tên vùng RAM bự, vùng RAM Anonymous

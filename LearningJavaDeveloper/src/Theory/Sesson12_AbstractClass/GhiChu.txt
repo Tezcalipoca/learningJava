@@ -1,0 +1,19 @@
+* LEVEL2: CHA TRỪU TƯỢNG, CON CỤ THỂ
+
+1. Muốn chế tạo nhiều khuôn, dùng tư duy Khuôn -> Nhân bản obj1, nhân bản obj2, ...
+2. Muốn chế tạo nhanh khuôn, ta dùng kế thừa, dùng 1 cái khuôn nào có trước độ lại (biến dị), xài lại cái cũ + cái mới
+3. Ta cần chế tạo nhiều khuôn, để từ đó ra Object cho nhanh
+-> Vẫn là kế thừa, vẫn dùng lại khuôn nào đó, vấn đề là dùng lại bao nhiêu khuôn để làm nhiều khuôn mới
+-> Mục tiêu đa dạng obj nhưng cần nhanh, mà lại chung phiên bản, tương đồng nhau.
+-> Ta cần một khuôn tổ để từ đó đẻ ra được nhiều khuôn con khác nhau
+-> Đám khác nhau về chung một nhà, chung mảng, sắp xếp sẽ yên vui.
+-> Sắp xếp mảng các object khá khác nhau.
+VUÔNG, TRÒN, CHỮ NHẬT CHUNG 1 NHÀ.
+VUÔNG, TRÒN, CHỮ NHẬT IS A KIND OF ...???
+
+VUÔNG LÀ CHỮ NHẬT, CHẾ TẠO VUÔNG RẤT NHANH.
+TGV LÀ TG, CHẾ TẠO TGV RẤT NHANH.
+V, TR, CN LÀ MỘT CÁI GÌ ĐÓ, CÁ LÀ CHẾ TẠO ĐÁM NÀY SẼ RẤT NHANH
+v, TR, CN, TG, HBH, oval, ... đều là hình học (shape). Phàm là hình học sẽ có đường nét, màu sắc, diện tích, chu vi
+
+SHAPE: Khuôn tổ, từ đây ra cả đám khuôn mới

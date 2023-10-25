@@ -1,0 +1,18 @@
+1. Một Class chứa hàm abstract tức là hàm không chứa code, tức là ý tưởng cần có thì bản thân hàm đó chưa hoàn hảo,
+chưa hành xử được, giống như bản concept, nó chỉ mới là ý tưởng mà thôi. Nếu class chưa hàm abstract thì class đó
+PHẢI LÀ ABSTRACT
+2. Các bước để hoàn thiện class con:
+    - Phát hiện IS A, extends
+    - Khai báo các đặc điểm của con
+       + Nếu con trùng với cha thì không cần khai báo, không cần làm, cha lo
+       + Con có quyền dị biệt về đặc điểm so với cha, dị biệt hành động so với cha (không bàn tới @Overide)
+   - Phễu con, giữ bản sắc nếu cần, đổi thứ tự biến cho thuận chiều
+   - Hàm của con: Có quyền làm dị biệt như bình thường (ảnh hưởng tổ lái con trỏ).
+3. Phiên bản kế thừa lv1 chưa xài abstract thì con chỉ cần tạo phễu là xong, xài 100% ở CHA, nếu muốn qua mặt CHA thì
+dùng @Override, Thích dị biệt thì cứ dị biệt.
+
+4. CLASS CON THỪA KẾ TỪ CHA SHAPE, CHA NÀY LÀ ABSTRACT, CHO NÊN CON CHỈ CÓ 2 LỰA CHỌN DUY NHẤT:
+    - Con làm biếng không thèm làm điều cha nói, không thèm viết code cho hàm abstract của cha, tức là con lúc này
+      chứa hàm abstract từ cha. Nếu class chứa hàm abstract thì mày chỉ là khái niệm, mày không hoàn hảo.
+      Nếu 1 class là 1 abstract như một bản concept, ko thể vận hành hoàn hảo được, do đó nó không thể new để tạo obj
+      -> CHA không thể new vì chưa hoàn hảo, nếu con cũng thế thì giống như DÒNG HỌ VÔ SINH
