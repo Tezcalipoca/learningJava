@@ -1,6 +1,6 @@
 package Theory.Sesson12_AbstractClass_version2.Data;
 
-// Shape Ông nội, con HCN, cháu Square -> Cây gia phả
+// Main Ông nội, con HCN, cháu Square -> Cây gia phả
 public class Square extends Rectangle {
     // Đoạn này học rồi, không cần khai báo gì thêm: V là HCN có 2 cạnh kề bằng nhau.
     // Muốn biến dị thì cứ làm, đã học ở bài Parent Child

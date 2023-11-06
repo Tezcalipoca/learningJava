@@ -1,7 +1,7 @@
 package Theory.Sesson12_AbstractClass_version2.Data;
 
 public class Triangle extends Shape{
-    // Triangle hoàn toàn dị biệt với Shape
+    // Triangle hoàn toàn dị biệt với Main
     private double a, b, c;
 
     public Triangle(String owner, String color, String borderColor, double a, double b, double c) {

@@ -1,0 +1,36 @@
+1. (*) Ôn tập Anonymous Class:
+
+- Tạo object con mà không chỉ định rõ class.
+- Mượn new class Cha để có đuược vùng super + extends/override.
+- Vùng RAM Object con giống y chang như vùng RAM của mọi Obj con khác tạo từ class có sẵn
+- Vùng RAM này về lý thuyết xuất phát từ khuôn nào đó mà ta không làm khuôn, vùng RAM này gọi là thuộc về class vô danh
+
+2. Truyền thống ta tạo object con là ta phải có class con trước với các hàm @Override viết sẵn, viết 1 lần xài cho mọi lần new.
+Ta sẽ làm trong class con nếu ta biết chắc chắn sẽ dùng để nhân bnar nhiều obj con trong tương lai.
+
+3. Cách On the go, không cần class con có sẵn, ta lợi dụng class CHA (đang là ABS class) new luôn. New luôn thì chỉ mới có vùng super CHA,
+chưa có được phần code cho CHA -> Java tự bung ra thêm 1 phần {...: ta viết nốt code cho hàm @Override }. Đừng quên chấm
+phẩy vì nó tương đương new một class CON();
+
+Cha ObjectLẻ = new Cha(...) {
+    @Override
+    Các hàm cha cần có code
+}
+    (ObjectLẻ: không có class CON mô tả)
+Giải thích:
+Giả sử ta sử dụng CHA ObjectLẻ = new CHA(...), tuy nhiên CHA là class Abstract, không hoàn hảo, nếu ObjectLẻ.Abs_method
+sẽ không có code sử dụng (vì chưa hoàn hảo) => Khi chấm phương thức abs của CHA cần có code của con => Code @Override
+    -> Nếu dùng class CHA để mô tả cho class CON mà cha là Abstract thì phải viết luôn code ON THE GO
+
+new Con = new Cha + phần mở rộng; (nhớ kết thúc bằng dấu ;)
+new HCN = superCHA + phần mở rộng làm sẵn rồi
+
+-> GIÁ PHẢI TRẢ KHI SỬ DỤNG ANONYMOUS:
+    - PHẢI ĂN THEO, NEW THEO CONSTRUCTOR CỦA CHA, MÌNH KHÔNG TẠO CLASS RỜI NHƯ HV, HCN ĐỂ CÓ PHỄU RIÊNG
+    - TỰ VIẾT LẠI CODE CHO CÁC HÀM @OVERRIDE DO MÌNH K LÀM CODE SẴN, KHUÔN CÓ SẴN
+-> LỢI KHI DÙNG ANONYMOUS: BẤT CỨ LÚC NÀO CẦN NEW OBJECT LÀ LÀM ĐƯỢC LIỀN VÌ ON THE GO, MƯỢN CHA NEW ~~~ super
+=> Dùng khi cần Object trong một tình huống nào đó mà không mất công tạo ra class rời
+=> Đích đến là Object, vùng new, có code chấm để chạy, Khuôn hay class chỉ giúp mình tạo obj nhanh thôi
+
+* LẬP TRÌNH OOP: TẠO VÙNG RAM CHỨA CODE/HÀM XỬ LÝ ĐỂ GỌI MÀ XÀI
+* LẬP TRÌNH NÓI CHUNG: VIẾT HÀM XỬ LÝ DATA

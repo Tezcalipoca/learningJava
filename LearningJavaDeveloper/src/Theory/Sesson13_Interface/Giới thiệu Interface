@@ -1,0 +1,73 @@
+* LEVEL 3: INTERFACE
+
+1. Muốn chế tạo nhiều khuôn, dùng tư duy Khuôn -> Nhân bản obj1, nhân bản obj2, ...
+2. Muốn chế tạo nhanh khuôn, ta dùng kế thừa, dùng 1 cái khuôn nào có trước độ lại (biến dị), xài lại cái cũ + cái mới
+3. Ta cần chế tạo nhiều khuôn, để từ đó ra Object cho nhanh
+-> Vẫn là kế thừa, vẫn dùng lại khuôn nào đó, vấn đề là dùng lại bao nhiêu khuôn để làm nhiều khuôn mới
+-> Mục tiêu đa dạng obj nhưng cần nhanh, mà lại chung phiên bản, tương đồng nhau.
+-> Ta cần một khuôn tổ để từ đó đẻ ra được nhiều khuôn con khác nhau
+-> Đám khác nhau về chung một nhà, chung mảng, sắp xếp sẽ yên vui.
+-> Sắp xếp mảng các object khá khác nhau.
+
+4. CÓ 1 CÁCH PHÂN LOẠI LỎNG LẺO HƠN, CÁC KHUÔN KHÁC NHAU VỀ ĐẶC ĐIỂM VÀ VẪN CHƠI ĐƯỢC VỚI NHAU, NHÓM LỎNG LẺO HƠN, MIỄN
+LÀ CHUNG -> INTERFACE
+
+========================================================================================================================
+CUỘC ĐUA KỲ THÚ AGAIN
+=====================================================================================
+Hamster
+Dog                    -----------------|> Pet (nhân tử chung của đám con)
+Cat                                            (Đặc điểm và hành vi)
+Sóc
+
+2 bạn chạy xe Exciter rượt theo con Dog, trên đường đua lúc này có Pet và Motor cùng đua, cùng làn đường, đua cùng nhau,
+so kè tốc độ, cùng MẢNG
+    - Mô phỏng lại trong lập trình thì Pet và Motor phải cùng mảng -> Mảng nào?
+    Cùng mảng thì phải cùng kiểu data type, vậy nói Pet is kind of Motor hoặc ngược lại -> gẫy
+
+Chỉ vì rượt đuổi nhau, nên mới chung đường -> CẢ 2 CÓ CÙNG MỤC ĐÍCH, HÀNH ĐỘNG:
+    - Một thằng ép xung để thoát
+    - Một thằng rượt hết tay ga để bắt được thằng kia
+    -> Ta không care chuyện gì khác ngoài 2 đứa kia đua với nhau, ta focus vào hành động đua, hành động rượt, không care
+    chuyện gì khác -> Có chung mục đích, hành động, rõ ràng ta đang là hội đua thủ - hội/gom nhóm những gã chỉ tập trung
+    vào một mục đích duy nhất (Đua)
+    -> Ta chỉ tập trung vào hành động, ta đã chơi chung được với nhau, không care xuất thân, ngoài đời là có thật, đây
+    là cách ta lập hội/nhóm ngoài đời
+HỘI/NHÓM LÀ GOM NHỮNG THÀNH VIÊN CÓ CHUNG SỞ THÍCH, CHÍ HƯỚNG HÀNH ĐỘNG, KHÔNG CARE NGUỒN GỐC XUẤT THÂN.
+    Ví dụ: clb đi Phượt, Phượt thủ gom những bạn từ khắp nơi, chỉ thích, quan tâm cuộc đời là những chuyến hành xác, chấp
+    bạn là Student, Worker, Lecturer, Freelancer, Employee, miễn bạn sẵn sàng lên đường, bạn là member of hội Phượt thủ
+    Gom nhóm về một hội nào đó - Class Phượt thủ xuất hiện
+
+    Ví dụ 2: Bạn là Worker, Student, Lecturer, Pupil, Employee, bạn cần cải thiện Tiếng anh, bạn tham gia vào một clb
+    tiếng Anh, bạn được nói rằng chỉ cần speak English là đủ, không care bạn xuất thân từ đâu, chúng ta chơi chung tiếng
+    anh, cùng giao tiếp Tiếng anh.
+    -> Worker, Student, Lecturer, Pupil, Employee IS A MEMBER OF ENGLISH CLUB, cần 1 method duy nhất: speakEnglish()
+
+    Ví dụ 3: Bạn là Worker, Student, Lecturer, Pupil, Employee, ... ra phố Bùi Viện và thuê 1 bình Shisa, đổ thuốc lào
+    Ả-rập, cả đám cùng kéo cần - hút Shisa
+    -> Worker, Student, Lecturer, Pupil, Employee IS A MEMBER OF SHISHAER
+    Chúng mình là đám nghiện ngập Shisha, tham gia hội phải hút theo các nào đó
+
+    Ví dụ 4: Bạn là Worker, Student, Lecturer, Pupil, Employee, ... tiếp tục phê ShiSha rồi, hưng phấn tay lái, rủ nhau
+    đua tốc độ, lên con Exciter, Winner, RGV, Rebel, ... Kéo tay ga ... tăng tốc, chỉ tập trung vào tốc độ
+        Chúng mình là đám nghiện ngập Shisha, tham gia hội phải hút theo các nào đó
+        -> Worker, Student, Lecturer, Pupil, Employee IS A MEMBER OF DEATH - RACER
+        => CLB ĐUA ĐẾN CHẾT XUẤT HIỆN VỚI HÀNH ĐỘNG ĐUA GÁC TAY GA, GÁC KIM ĐỒNG HỒ
+
+ ** >> CHUNG HÀNH ĐỘNG, CHUNG TIẾNG NÓI THÌ VẪN CÓ THỂ Ở CHUNG VỚI NHAU PHẦN NÀY THÔI, CHUNG MẢNG, CHUNG KIỂU MEMBER,
+ CHUNG CLB, GOM NHÓM THEO HÀNH ĐỘNG, GOM THEO INTERFACE, TIẾNG NÓI CHUNG
+    tham gia HĐ, ta chỉ quan tâm hành động
+KHUÔN NÀY DÍNH DÁNG KHUÔN KIA MỘT XÍU VỀ HÀNH ĐỘNG, ĐỂ CHÚNG CÓ THỂ CHUNG NHAU 1 CHÚT GÌ ĐÓ TRÊN HÀNH ĐỘNG, TỤ TẬP ĐƯỢC
+MỘT NHÓM HÀNH ĐỘNG, CÓ NHÓM THÌ CÓ TÊN, CÓ CLASS - CLASS LÀ CÁCH GOM NHÓM
+
+=> Có 2 hình thức gom nhóm:
+    - Gom trên đặc điểm - Inheritance (họ hàng bà con)
+    Inheritance/abstract class là tên của một dòng họ nhiều con cháu chia sẻ đặc điểm, hành vi
+    - Gom trên hành vi, tụ tập nhau làm gì đó - interface - chung giao tiếp (hội nhóm)
+    Interface là tên của một hội nhóm hành động
+
+IS - A - KIND OF : CHẶT CHẼ TRONG PHÂN LOẠI (ĐẶC ĐIỂM VÀ HVI)
+IS - A - MEMBER -OF: TẬP TRUNG VÀO HÀNH VI, MỤC ĐÍCH, LỎNG LẺO TRONG VIỆC KẾT HỢP
+
+tui, BẠN BÊN YOUTUBE CỦA TÔI, NGÔI CHUNG VỚI NHAU VÌ YÊU THÍCH CODE, KHÔNG CARE CHUYỆN GÌ KHÁC, CHÚNG TA THUỘC CLB
+YÊU-CODE-ĐẾN-CHẾT, NGỒI CHUNG BUỔI LIVE, CODE THÔI.

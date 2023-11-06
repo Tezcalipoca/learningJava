@@ -12,6 +12,10 @@ public abstract class Shape {
         this.borderColor = borderColor;
     }
 
+    public Shape() {
+
+    }
+
     public String getOwer() {
         return owner;
     }

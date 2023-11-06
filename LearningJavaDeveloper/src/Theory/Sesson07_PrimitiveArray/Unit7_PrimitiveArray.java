@@ -18,7 +18,7 @@ package Theory.Sesson07_PrimitiveArray;
  *          ví dụ: int arr[] = new int[365];
  * 3. Hệ quả:
  *      - QUAN TRỌNG: Tên mảng là một biến reference trỏ vào đầu một dãy rất nhiều biến khác
- *      - Khai báo biến nhanh hơn, nhưng tên biến phức tạp hơn, đi kèm (số thứ tự do tội trùng têm biến cần có cách
+ *      - Khai báo biến nhanh hơn, nhưng tên biến phức tạp hơn, đi kèm (số thứ tự do tội trùng tên biến cần có cách
  *           phân biệt)*/
 public class Unit7_PrimitiveArray {
     public static void main(String[] args) {

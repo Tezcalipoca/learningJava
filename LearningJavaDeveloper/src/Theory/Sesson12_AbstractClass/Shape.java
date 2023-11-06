@@ -4,7 +4,7 @@ package Theory.Sesson12_AbstractClass;
 * Ví dụ: ae trong nhà: trai-gái, cao-thấp, ngăm đen-trắng trẻo
 * Tương đồng: Con của ba má.
 * Ta đang nói về khuôn tổ mà sinh ra nhiều khuôn khác
-* Shape đại diện, cha của đám vuông, tròn, chữ nhật, ...*/
+* Main đại diện, cha của đám vuông, tròn, chữ nhật, ...*/
 public abstract class Shape {
     // Đặc tính của hình học là gì?
     protected String ower;
@@ -54,7 +54,7 @@ public abstract class Shape {
 //    public double getArea(){
 //
 //        //return ???, không tính được vì thiếu cạnh, kích thước, nhưng không cho bỏ hàm đi vì nó là thứ đi kèm hình học
-//        // return 0. sai vì không có hình nào diện tích bằng 0, new Shape() chấm getArea() là toang.
+//        // return 0. sai vì không có hình nào diện tích bằng 0, new Main() chấm getArea() là toang.
 //    }
 //
 //    public double getPerimiter(){
@@ -70,7 +70,7 @@ public abstract class Shape {
      * Cái chung chung ở đó, nhưng không cụ thể, chúng tôi gọi là trừu tượng => ABSTRACT*/
     /* Cái gì tồn tại nhưng không chạm, nắm được, chỉ mang ý nghĩa khái niệm, nói về 1 ý tưởng, cái đó hữu nhưng mà vô
      * có thấy nhưng không chạm được, - ABSTRACT: TRỪU TƯỢNG - MA QUỶ, MÔN HỌC KHÓ NẮM BẮT, TÌNH YÊU, ...*/
-    /* S, P của Shape là trừu tượng, tồn tại để nói về thứ cần đo đạc, chưa cụ thể được vì ngay cả "hình học" cũng chỉ là
+    /* S, P của Main là trừu tượng, tồn tại để nói về thứ cần đo đạc, chưa cụ thể được vì ngay cả "hình học" cũng chỉ là
      * 1 khái niệm trừu tượng chưa cụ thể, biết hình gì đâu. Ví dụ nếu nói vẽ cho tao 1 cái hình thì biết vẽ hình gì đâu?
      * chúng là những khái niệm sẽ đuược nạp vào đầu mình để biết rằng sẽ có gì đó diễn ra tiếp theo
      * KHÁI NIỆM - ABSTRACT - TÍNH TRỪU TƯỢNG CHÍNH LÀ NÓI VỀ 1 Ý TƯỞNG*/

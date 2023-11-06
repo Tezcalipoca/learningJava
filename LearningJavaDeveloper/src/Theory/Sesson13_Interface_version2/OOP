@@ -1,0 +1,77 @@
+
+============================================== CHỐT HẠ OOP =============================================================
+            OOP CONCEPTS/ OOP PRINCIPLES/FUNDAMENTAL CONCEPTS OF OOP / FOR PILLARS OF OOP
+1. ABSTRACTION: Trừu tượng hóa mọi vật (không phải abstract class)
+    - Là tư duy, cách suy nghĩ để chuyển đổi/biến hóa/biểu diễn các thứ phức tạp trong cuộc sống thành những thứ đơn giản
+      hơn nhưng vẫn diễn tả đúng ý nghĩa của sự vật ban đầu.
+    - Là cách nói về những thứ phức tạp trong cuộc sống thông qua một thứ khác đơn giản hơn, vẫn không làm mất đi ý nghĩa
+      của thứ phức tạp ban đầu
+    - Biểu diễn lại một thứ phức tạp ngoài đời để dễ hiểu hơn
+    - Cách lấy ra những thông tin quan trọng nhất, tiêu biểu nhất của một obj phức tạp ngoài đời để biểu diễn lại cho ai
+      cũng hiểu được.
+    - Một thứ phức tạp ngoài đời được biểu diễn qua một thứ đơn giản hơn mà không làm mất chất
+    - USING A SIMPLE THINGS TO REPRESENT THE COMPLEX THINGS
+    - EXTRACT THE SIGNIFICANT FEATURES/CHARACTERISTICS TO FORM A SIMPLE/EASY CATCHING THINGS WITHOUT LOSING THE ORIGINAL
+      MEANING OF THE COMPLEX THINGS
+    - Tư duy nắm bắt những thông tin cốt lõi, quan trọng của obj ngoài đời, dùng để biều diễn lại obj đó
+
+    Ví dụ: Sinh viên ở ngoài đời rất phức tạp về thông tin: tên, tuổi, địa chỉ, thường trú, tạm trú, tiêm vacxin chưa,
+           lịch trình di chuyển, gia cảnh, ba mẹ, sở thích, chuyên ngành học, học kì đang học, tình trạng học, deadline,
+           điểm thi các môn, các mối quan hệ xã hội, ... n thông tin của một obj, quá complex
+           -> Trường không nắm hết các thông tin này, vẫn có thể quản lý được "thứ/obj" phức tạp này bằng cách tìm ra
+           những đặc trưng đủ để quản lý, biểu diễn, mô tả, minh họa (represent) một sinh viên
+           SinhVien(id, email, tên, địa chỉ, phone, chuyên ngành, điểm các môn) -> rút gọn/extract những inf quan trọng
+           nhất, có ý nghĩa nhất để minh họa, biểu diễn một sinh viên bất kì, rút gọn từ n info ở trên chỉ còn vài inf
+           quan trọng -> Thao tác trừu tượng hóa mọi vật, biến từ phức tạp thành đơn giản mà vẫn giữ nguyên ý nghĩa
+    => Tìm đặc điểm quan trọng của một Obj, tìm đặc điểm cho 1 class/khuôn -> ABSTRACTION
+    BIẾN ĐỔI BIỂU DIỄN INFO KHÔNG KHIẾN MẤT GỐC BAN ĐẦU
+    MÔ TẢ LẠI CÂU CHUYỆN/THỨ NÀO ĐÓ ĐỂ AI CŨNG HIỂU ĐƯỢC, TÍNH TRỪU TƯỢNG/TÍNH MÔ TẢ/NGẮN GỌN
+    TRỪU TƯỢNG HÓA TỨC LÀ KỂ LẠI CÂU CHUYỆN MÔ TẢ TRONG TRÍ NÃO, KỂ LẠI CHO AI ĐÓ NGHE VÀ NGƯỜI TA HIỂU ĐƯỢC
+    Ví dụ 2: Bệnh nhân: mã bệnh nhân, tên, dị ứng, lịch sử khám, đơn thuốc
+2. ENCAPSULATION: (Hệ quả của trừu tượng hóa) Cô lập, đóng gói mọi thứ
+    - Nhận diện một đối tượng gồm đặc tính và hành vi, gom chung trong một đơn vị obj/class
+    - Hàm (xử lý data) + biến (data) gom vào một đơn vị code/class/object
+    - Gom xong thì giấu/che đi bằng thuật ngữ private, show ra nếu muốn theo cách public hoặc protected.
+    - Tạo class đóng gói mọi thứ, gồm đặc điểm + hành vi, che và không che
+    - Giống như viên thuốc con nhộng - vỏ ngoài là protein - kiểu nhựa sinh học, tan khi uống vào, vặn vặn tách ra được
+      bên trong thấy bột thuốc.
+      -> Nhìn bên ngoài vỏ thuốc con nhộng thì không thấy bên trong, ENCAPSULATION (V) gói lại, che giấu, nhưng vẫn có thể
+         trong suốt nếu muốn, ... nhưng trong con nhộng, kén, vỏ nhựa sinh học chắc chắn chỉ là thuốc
+    - Gom inf và xử lý vào trong một đơn vị, che giấu và show ra khi cần thiết
+    - TIVI: Che bằng vỏ nhựa đen/xanh/bạc/màn hình, ta chỉ tương tác qua remote/nút bấm, không thấy bên trong tivi ra sao
+      xử lý + quét data bộ phim wifi/vô tuyến, không quan tâm đứng ngoài tivi giao tiếp qua public nút bấm. Tivi chỉ để
+      duyệt web, xem phim.Tivi chính là ENCAPSULATION
+    - ATM cũng vậy, không thấy khay tiền private, không thấy cục hít tiền, khong thấy hành xử bên trong, chỉ public cái
+    hành động bấm nút rút tiền, ... -> Đóng gói, gói cho việc rút tiền, không làm việc khác
+
+    => ENCAPSULATION chính là cách gom hàm, biến vào một đơn vị đối tượng/vật thể/obj/class và chỉ làm đúng việc của nó
+       được chỉ định thiết kế. Gom gì thì cần ABSTRACTION để lấy các đặc trưng.
+    => ABSTRACTION và lấy ra đặc trưng, ENCAPSULATION là gói trọn vẹn đúng thứ cần làm.
+       ABSTRACTION: Nhận diện OBJ
+       ENCAPSULATION: Tạo class instance variable + method()
+3. INHERITANCE: Tái sử dụng (không phải Copy-paste), có xài luôn, không thao tác gì thêm
+    - Reuse lại code mà không cần phải làm lại code, thậm chí không cần copy-paste
+    - Con được thừa kế những tài sản, thông minh từ ba mẹ
+    - tăng tốc quá trình viết code khi có đoạn code, object đã làm tốt việc của nó rồi, ta tận dụng để mở rộng thêm khả
+      năng của obj mới, dùng lại đồ object cũ + dị biệt ta làm thêm.
+      TĂNG TỐC LÀM: BA MÁ ĐÃ CÓ TIỀN, MÌNH THUẬN LỢI TRONG VIỆC CÓ VỐN LÀM ĂN
+                    BA MÁ CHO CĂN NHÀ, MÌNH ĐỠ LO TIỀN TRỌ, TA CHỈ LO TIỀN ĂN
+                    BA MÁ CHO VỐN, TA LÀM GIÀU NHANH HƠN, KHÔNG ÁP LỰC TRẢ NỢ, LỜI GIỮ LUÔN
+                    THAY VÌ BÒN RÚT KIỂU BẤT HIẾU, XÀI MÀ KHÔNG CHỊU LÀM THÊM NAY TA BẬT NHANH HƠN, HỘI NHẬP, JOIN CUỘC
+                        SỐNG NHANH, TỰ TIN HƠN
+      CÓ THƯ VIỆN VIẾT CODE ĐỂ LÀM APP NHANH, KHÔNG LÀM LẠI TỪ ĐẦU
+      CÓ THƯ VIỆN, MỞ RỘNG THƯ VIỆN CHO NHU CẦU RIÊNG, ĐA NĂNG SỬ DỤNG, TĂNG TỐC VIẾT CODE
+      CHA CỤ THỂ, CHA TRỪU TƯỢNG, CÂY PHÂN LOẠI (BÀI ABSTRACT CLASS)
+      ABSTRACT CLASS CHẲNG QUA LÀ CÁCH GOM, PHÂN LOẠI ĐỐI TƯỢNG MỨC CAO THẤP, GIỐNG NHƯ PHÂN LOẠI SỰ VẬT NGOÀI ĐỜI, GOM
+      NHÓM NGOÀI ĐỜI. TẬN DỤNG LẠI KẾ THỪA THÀNH QUẢ OBJECT CÓ CÁI GÌ, DÙNG LẠI NGUYÊN TẮC TRỪU TƯỢNG HÓA + ENCAPSULATION
+
+4. POLYMORPHISM: Đa hình, đa ánh xạ, từ một ra nhiều
+    - Mùa đông năm 1946, Bác Hồ ra lời kêu gọi toàn quốc kháng chiến: Ai có súng dùng súng, ai có dao dùng dao, ...
+      chỉ là 1 câu kêu gọi của Bác: Chiến()
+      Nhân dân quật khởi đứng lên: dao, kiếm, liềm, móc câu, ... đa dạng cách giết giặc, đa dạng cách implements hành động
+      Chiến() -> một từ Chiến() có n cách làm khác nhau, tính đa dạng, biến hình, đa sắc thái, đa nhân cách, đa hình
+      => POLUMORPHISM
+    - Các vua Hùng đã có công dựng nước, Bác cháu ta phải implements/Override
+    - Từ một hàm CHA, n CON @Override qua mặt, chính là tính đa hình
+    - Gọi CHA mà CON chạy, đảm bảo tính đa dạng của các hành động vẫn chơi chung và thống nhất hành động qua tên gọi
+    -  @Override hiện thực tính đa hình.

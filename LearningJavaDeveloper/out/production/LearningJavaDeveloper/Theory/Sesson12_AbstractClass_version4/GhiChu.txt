@@ -49,3 +49,7 @@
     -> Class Anonymous
     -> Vẫn new được obj con của shape mà không cần 1 class con cụ thể, vậy thì vùng RAM này chính là đại diện cho một
     class làm biếng, làm riêng/đặt tên, class ẩn danh Anonymous
+9. Khai CHA new CHA, Mượn gió bẻ măng, cha new đỡ cho con, mở rộng ra đi CON, viết code on the go, đừng quên chấm phẩy
+    mày làm biếng tạo class để clone cho nhanh, mày chơi trò new tao ngay, tao hỗ trợ vùng extends hoàn thiện code
+    @Override cho tao, ba sẽ là cánh chim, đưa con new on the go
+    -> Anonymous class, vùng RAM vẫn bự như làm class rời, làm biếng đặt tên vùng RAM bự, vùng RAM Anonymous

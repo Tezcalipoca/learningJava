@@ -1,0 +1,108 @@
+A. ÔN TẬP LẠI VỀ INTERFACE
+
+    1. Interface cũng là một dạng class "CHA", vì Class gom nhóm và đặt tên nhóm. "CHA" này chỉ có các hàng động (abstract,
+        không code, JDK 8, 9 cho phép có code trong tình huống đặc biệt).
+    2. Đám "CON", members có nhiệm vụ triển khai/thi hành, hành động của "CHA"
+    3. Interface là clb có "nội quy" chung chung.
+        Interface là tổ chức/hiệp hội cung cấp những tiêu chuẩn/hướng dẫn chung chung.
+    4. Những hội viên, những đứa "CON" phải có nhiệm vụ implements tất cả
+        Ví dụ: Hiệp hội đo lường TCNV đưa ra tiêu chí về an toàn thực phẩm (nồng độ, hàm lượng chất bảo quản trong thực phẩm),
+                Các cơ sở sản xuất theo tiêu chuẩn này làm các sản phẩm hàng VN chất lượng cao,
+    5. Interface là bộ quy tắc hành xử, cam kết ai đó phải cần theo, cụ thể làm thế nào thì mỗi hội viên phải lo/làm
+
+B. ỨNG DỤNG CỦA INTERFACE
+
+    1. Giúp 1 class/obj có nhiều cách hành xử khác nhau, tôi là member của hội nào thì tôi có hành động của Hội đó
+       Giúp cho 1 obj/người đóng nhiều vai, vai nào thì có hành động tương ứng.
+        -> Đây chính là một "hình dạng" của tính Đa kế thừa - MULTI INHERITANCE.
+        * Lưu ý: Trong Java, 1 class chỉ có tối đa 1 CHA - Đơn kế thừa, extends đúng 1 class CHA - SINGLE INHERITANCE.
+                 Trong C++, 1 class có thể có nhiều cha, đa kế thừa:
+                 CHA1: hàm f() có code
+                 CHA2: hàm z(), ... và hàm f() có code
+                 CHA3: hàm f(), ... có code
+                 -> Con kế thừa cả CHA1, CHA2, CHA3, hòi rằng CON.f() lấy hàm của ai? -> Gây ra ambiguous, vì CHA nào cũng
+                                                                                         có hàm f()
+                 Java fix bằng cách CON chỉ kế thừa 1 CHA, hàm f() của CHA có code hay không không care.
+                 CON kế thừa chỉ 1 CHA, CHA có f():
+                                                       + Có code thì xài luôn
+                                                       + abstract f() thì CON viết code, chấm chạy luôn @Override
+                 Trong C++ đa kế thừa, CON có quyền bị ảnh hưởng bởi nhiều CHA, mỗi CHA cho các hàm, vậy CON sẽ đa dạng
+                 hành động trong nhiều CHA.
+
+                 Trong Java, CON 1 CHA, nhưng lại được quyền tham gia nhiều Interface
+                             CON 1 CHA, nhưng vào chơi nhiều clb, chơi clb nào thì có hành động clb đó, vẫn đảm bảo tiêu
+                                        chí con có nhiều hành động từ bên ngoài, giống như con có hành động từ nhiều CHA
+    2. Interface/clb C1 hàm abs ... f() không code
+                     C2 hàm abs ... f() không code
+                     C3 hàm abs ... f() không code
+       CON extends CHA như bình thường, implements/tham gia vào clb C1, C2, C3, con ơi m phải có code ngay cho f()
+                                                                                                       @Override f()
+                     -> Không còn bối rối f() vì chỉ có duy nhất 1 phiên bản code f()
+    3. INTERFACE CŨNG LÀ MỘT DẠNG "KẾ THỪA" CÁC HÀNH ĐỘNG, CHUNG HÀNH ĐỘNG
+    4. INTERFACE LÀ BỘ QUY TẮC HÀNH XỬ, ỨNG XỬ, CAM KẾT AI ĐÓ THAM GIA LÀM MEMBER THÌ PHẢI TUÂN THEO HÀNH ĐỘNG ĐÃ CAM KÊT
+        NHƯNG SÁNG TẠO TRONG HÀNH ĐỘNG (IMPLEMENT)
+
+C. CODE VIẾT SAO?
+    1. public class CON/HỘI-VIÊN implements CLB1, CLB2, CLB3,...(){
+          @Override tất cả các hành động của các clb, tham gia nhiều thì phải hoạt động nhiều;
+    }
+
+    CLB không có đặc điểm, không có phễu/CONSTRUCTOR - nhưng có hàm Abstract. Nhưng khi new CON thì clb vẫn sẽ được
+       new để "BA" sẽ là cánh chim, đưa con extends @Override. MEMBER/CON vẫn có 1 vùng RAM của clb - chứa hàm abstract,
+       con trỏ vẫn trỏ lưng chừng clb được, vẫn @Override vì con có hàm trùng tên CHA và có code.
+       -> Vẫn theo mô hình RAM của abstract class/cha truyền thống. Con to hơn CHA/CLB về vùng RAM.
+       -> super của CLB là super() ngầm
+
+    2. public class CON/HỘI-VIÊN extends CHA implements CLB1, CLB2, CLB3,...(){
+                 @Override tất cả hành động của CHA nếu CHA là abstract class
+                 @Override tất cả các hành động của các clb, tham gia nhiều thì phải hoạt động nhiều;
+           }
+    CON đóng n vai: Vai dòng họ, vai CLB, giống ngoài đời.
+    Nếu xui, CHA và các CLB có cùng tên hàm f() ngoài những hàm khác, thì CON có bị bối rối không?
+    -> CON không bối rối, vì f() của CHA và các CLB toàn là abstract nên CON chỉ cài code @Override 1 duy nhất hàm f(),
+       không sợ ambiguous vì đường nào CON cũng @Override qua mặt, vì các CLB và CHA chỉ nói chứ không làm.
+
+    3. ANONYMOUS: Obj vãng lai tham gia CLB, vậy thì m cũng phải hành xử như việc m tham gia chính quy/thường xuyên, phải
+    có hành động tương ứng mới được tham gia, chỉ ngay lúc đó thôi, ON-THE-GO.
+    - GHÉ NGANG MÀ CHƠI, THÌ PHẢI CHƠI/HÀNH XỬ NHƯ NGƯỜI TA ĐANG CHƠI.
+    - Bản chất ta có 1 nhóm nào trước đó, nhưng ta chỉ hòa nhập lúc này, chơi lúc này, tham gia lúc này, không cần bộc lộ
+      rõ trước đó ta là ai, nhóm nào, chỉ cần biết join nhóm mới lúc này.
+    - Cắt 1 hình ngẫu nhiên (có obj rồi đó), mà không biết tên gọi riêng của nhóm/class này là gì
+      -> Gọi theo tên phân loại chung, nhóm CHA chung -> obj thuộc class CHƯA XÁC ĐỊNH, obj thuộc class ANONYMOUS,
+                                                         căn theo CHA/phân loại chung mà gọi. Hình ngẫu nhiên đó gọi là
+                                                         hình học
+      Shape x = new Shape(...) {
+            @Override
+            Hàm của phân loại chung, class CHA abstract
+      }; ~~~ Shape r = new Rectangle(...); // Khi đã biết obj thuộc nhóm nào rõ ràng trước đó: Rectangle
+
+    - CLB-Cờ x = new Student(...); // Một sinh viên tham gia CLB cờ - code sẵn @Override
+    - DeathRacer m = new Motor(...); // Mô tô đi học còn tham gia đua - code sẵn runToDead(...)...@Override
+    - Một gã ghé ngang, không chuyên nghiệp nhưng ham vui, chơi thì chơi
+    CLB-Cờ hangXom = new CLB-Cờ(){
+            @Override
+            Mày ham chơi, ghé ngang tham gia, thì phải có hành động tương ứng
+    }
+
+    ABSTRACT CLASS VÀ INTERFACE ĐỀU LÀ 2 THỨ KHÔNG HOÀN HẢO, CHỈ NÓI MÀ KHÔNG TRIỂN KHAI LÀM, CON/MEMBER CẦN PHẢI HOÀN
+    TẤT NỐT CÂU CHUYỆN KHÔNG HOÀN HẢO @OVERRIDE
+    DÙNG THÊM KĨ THUẬT MƯỢN GIÓ BẺ MĂNG, MƯỢN CHA, CLB ĐỂ NEW RA OBJ THUỘC NHÓM CHA/CLB @OVERIIDE ON-THE-GO, TAKE-AWAY
+    OBJETC VÃNG LAI, KHÔNG XÁC ĐỊNH NHÓM TRƯỚC MÀ MUỐN THAM GIA CUỘC CHƠI, DÒNG HỌ, THÌ PHẢI HÀNH XỬ, CƯ XỬ NHƯ DÒNG HỌ,
+    MEMBER
+    KHÔNG GỌI CHÍNH XÁC NHÓM BẠN, NHƯNG GỌI BẠN THEO NHÓM BẠN THAM GIA, THEO NHÓM BẠN CHƠI ĐƯỢC MÀ, VÙNG RAM VÀ MỌI HÀNH
+    XỬ CHẤM @OVERIIDE QUA MẶT NHƯ BÌNH THƯỜNG, DO LÀM BIẾNG TẠO CLASS RỜI - CONCRETE
+
+D. ỨNG DỤNG CỦA INTERFACE
+    - LOOSE COUPLING (GẮN KẾT LỎNG LẺO) GIÚP CHO CÁCH TỔ CHỨC CÁC CLASS CÓ RÀNG BUỘC VỚI NHAU ĐỂ LÀM NÊN CÂU CHUYỆN LỚN
+      NHƯNG LẠI DỄ DÀNG MỞ RỘNG VÀ THAY ĐỔI.
+    - DÙNG INTERFACE LÀ CÁCH VIẾT CODE LÀ CÁCH VIẾT CODE LINH HOẠT, DỄ DÀNG THAY ĐỔI CODE MÀ KHÔNG PHẢI SỬA PHẦN CODE
+      CŨ, DỄ DÀNG MỞ RỘNG CODE, THÍCH ỨNG CHO TƯƠNG LAI, ...
+    - INTERFACE LÀ CÁCH KẾT GIAO, MỞ RỘNG GIAO TIẾP, KẾT NỐI VỚI XUNG QUANH
+    - COMPARABLE/COMPARATOR -> DÍNH ĐẾN LOOSE COUPLING
+
+E. MỤC TIÊU CUỐI CÙNG/TỐI THƯỢNG CỦA INTERFACE: CHƠI CHUNG VỚI NHAU DÙ BẠN KHÁC BIỆT TRONG HÀNH XỬ:
+   - MỖI THẰNG ĐUA KHÁC NHAU NHƯNG CÙNG ĐƯỜNG ĐUA
+   - MỖI THẰNG HÚT KHÁC NHAU NHƯNG CÙNG CLB PHÊ CẦN
+   - MỖI BẠN ĐÁNH CỜ KHÁC NHAU, NHƯNG CÙNG VÁN CỜ
+   - MỖI CARD ĐỒ HỌA KHÁC NHAU VỀ NĂNG LỰC XỬ LÝ, NHƯNG CHUNG KHE PCI-EX
+   - MỖI THIẾT BỊ ĐIỆN KHÁC NHAU VỀ CÔNG NĂNG/TÍNH NĂNG XỬ DỤNG, NHƯNG CHUNG Ổ CẮM 220V

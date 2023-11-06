@@ -4,7 +4,7 @@ import Theory.Sesson12_AbstractClass_version4.Data.Shape;
 
 public class Main {
     public static void main(String[] args) {
-        palyWithAnonymousClass();
+        playWithAnonymousClass();
     }
 
     /*Kĩ thuật tạo obj/ vùng new mà không cần khuôn cụ thể dành cho những obj vô định hình, không có công thức cụ thể
@@ -13,7 +13,7 @@ public class Main {
     * Không có công thức tính chung, nhân bản lại được nhanh chóng
     * -> Obj vãng lai, không quen, không thường sử dụng
     * Dù là hình kiểu gì, công thức chung: super()(~new CHA(...)) + @Override cho tất cả các hàm của cha*/
-    public static void palyWithAnonymousClass(){
+    public static void playWithAnonymousClass(){
         Shape hinhVangLai = new Shape("Chính mình", "Blue", "Red") {
             // Cắt ngẫu nhiên nên không biết có bao nhiêu cạnh để đưa vào
 
@@ -30,13 +30,13 @@ public class Main {
 
             @Override
             public void paint() {
-                // Khai báo là con Shape vẫn kế thừa như bth
+                // Khai báo là con Main vẫn kế thừa như bth
                 System.out.printf("|NGẪU NHIÊN|%-10s|%-10s|%-10s|%4.1f|\n", owner, color, borderColor, getArea());
             }
         };
-        /* Mày là hình, thoải mái vào mảng Shape sort nếu muốn
-        * Mày vẫn là Shape, kiểu Shape, có đủ code cho hàm cha
-        * Kĩ thuật này là mượn gió bẻ măng, mượn cha tạo con, mượn Shape new CON
+        /* Mày là hình, thoải mái vào mảng Main sort nếu muốn
+        * Mày vẫn là Main, kiểu Main, có đủ code cho hàm cha
+        * Kĩ thuật này là mượn gió bẻ măng, mượn cha tạo con, mượn Main new CON
         * new Abstract class sẽ bung rộng màn hình gõ code Override
         * Thỏa công thức CON  = new CHA + @Override
         * Chỉ xài cách này nêu chỉ cần làm 1 obj ON THE GO, mà làm biếng làm khuôn con riêng lẻ, theo công thức nhân bản*/

@@ -1,0 +1,85 @@
+1. LƯU TRỮ, CHƠI/XỬ LÝ NHIỀU DATA/OBJECT, THÌ TA CẦN MUA CÁI TÚI, GIỎ, BALO, THÙNG, TỦ, PHÒNG ĐỂ ĐỰNG NHIỀU ĐỒ. MUA CÁI
+TÚI, XÂY CÁI PHÒNG, CHÍNH LÀ new caiTui(), new caiTu(), new canPhong. Một món đồ thật là thùng chứa thì phải có 1 thùng
+chứa thật được tạo ra để ta bỏ đồ vô, do đó ta phải new thungChua() là chắc chắn rồi.
+    * Quan điểm lập trình: new ĐỂ CÓ VÙNG RAM ĐỂ LƯU TRỮ INFO + HÀM XỬ LÝ INFO THEO ENCAPSULATION.
+    obj trong RAM tương đương với một món đồ thật ngoài đời, ví dụ điện thoại có màu sắc, giá tiền, hành động gọi nghe,
+    chụp ảnh thì mình cần phải mua về, nhà sản xuất phải new ra mình mới có xài. Mình trừu tượng hóa món đồ thật thành
+    obj trong lập trình thì cũng cần new để có vùng RAM chứa data + xử lý.
+    MUA TỦ ĐỒ ĐỰNG NHIỀU ĐỒ THÌ TA CẦN NEW TỦ() CÓ KHÔNG GIAN ĐỰNG ĐỒ VÀ CÁC HÀNH ĐỘNG TƯƠNG ỨNG
+
+   TỦ tuCuaTui = new TỦ(); -> Trong RAM sẽ có vùng không gian để đựng đồ
+                           -> Ngoài đời, tủ chiếm 1 góc phòng để ta đựng đồ
+   cái tủ cho mình làm gì thì mình làm đó/encapsulation/abstraction
+   mua TV không smart, chỉ xem cap thôi, làm sao duyệt web được
+   mua TV mà smart thì mới duyệt web và xem youtube được -> Đóng gói hành động và đi kèm obj. Mua Dog về thì nó giỡn với
+                                                            mình được mà
+   tuCuaTui.addMonDo(món đồ đưa vào trong tủ) -> tủ cho phép mình bỏ đồ vô ~ lò nướng cho mình bỏ gà vào để nướng
+   LòNướng loCuaTui = new LòNướng(); // Mua lò về thì chiếm góc bếp
+   loCuaTui.addDoNuong(con-gà-để-nướng)
+
+   => TỦ là OBJ chứa nhiều đồ đạc khác
+   1. Mua tủ                                    TỦ tuCuaTui = new TỦ();
+   2. Mua đồ Add vô tủ                          tuCuaTui.addMonDo(new/mua 1 món đồ thảy vô tủ)
+
+   MUA CÁI TÚI, MUA CÁI GIỎ, MUA CÁI THÙNG, NEW TỦ(), NEW GIỎ(), CÓ DÂY KÉO BỎ món đồ mình muốn cất
+   tuiCuaTui.addMonDo(mua món đồ bỏ vô túi = new MónĐồ())
+
+2. TA CÓ 2 LOẠI TỦ:
+    2.1. TỦ LOẠI 1: Loại fix cứng số đồ để vô, chỉ bỏ vô một số giới hạn món đồ
+        -> Chính là MẢNG[Số đồ để vô]
+        - Mảng chính là khai báo nhiều biến, nhiều chỗ chứa [FIX số chỗ]
+        - Mảng y chang xe ô tô chở khách 16 chỗ, y chang rạp phim/phòng chiếu A[100 ghế]
+        - Mảng chứa tọa độ vùng new Món đồ: [i] = new MónĐồ() cứ thoải mái nằm đâu đó, ta chỉ cần lưu tọa độ
+        Student arr[] = new Student[100]; -> Sẽ có 100 chỗ ngồi cho sinh viên, chưa có bạn nào cụ thể
+                                          -> arr là biến má mì, tên gọi tắt cho 1 cái tủ có 100 chỗ
+                                          -> Tên mảng là 1 tên gọi cho 1 cái tủ fix số chỗ vì nó trỏ đến new[số chỗ]
+                                          -> Bỏ đồ vào mảng thì không cần dùng hàm, hành động của tủ, cho sờ trực tiếp
+                                             chỗ để:
+                                             arr[0] = món đồ bỏ vô, new món đồ bỏ vô ~ tuCuaTui.addMonDo(new MonDo);
+                                                                                       tuCuaTui vị trí 0 được cất món đồ new món đồ
+                                          -> món đồ new nằm trong HEAP, nằm bên ngoài tủ, tủ chỉ lưu danh sách tham chiếu
+                                          -> ~ tủ chứa danh sách hồ sơ bệnh nhân nhưng bệnh nhân vẫn nằm trong phòng điều trị
+                                          -> ~ giáo viên giữ danh sách sinh viên nhưng đang hè nên sinh viên ở quê
+        * DÙNG TỦ LOẠI 1 HAY LOẠI 2 THÌ ĐỀU CHỨA NHIỀU ĐỒ: ĐỒ ĐỂ THẬT SỰ TRONG TỦ HAY CHỈ GIỮ DANH SÁCH THAM CHIỀU ĐỀU OK
+          Ví dụ: TỦ HỒ SƠ GIỮ DANH SÁCH THAM CHIẾU, GOOGLE MEET GIỮ DANH SÁCH THAM CHIẾU, DANH SÁCH KÝ TÊN (TỦ) CHỨA THAM CHIẾU -> MẢNG OBJECT
+                 TỦ QUẦN ÁO CHỨA ĐỒ THẬT LUÔN - MẢNG PRIMITIVE VALUE LẤY XÀI LUÔN.
+    2.2. TỦ LOẠI 2: CO GIÃN SỐ ĐỒ BỎ VÔ, THOẢI MÁI ĐỂ ĐỒ VÔ, CẦN THÊM CHỖ THÌ CÓ THÊM CHỖ KHÔNG CẦN XIN, CỨ ĐỂ ĐỒ VÔ LÀ
+                    THÊM CHỖ ~ Nồi cơm Thạch Sanh, giếng Khơi múc nước thì lại có nước.
+         ArrayList, Vector                      |         HashSet, TreeSet            |         HashMap, TreeMap
+    Ban đầu không có chỗ nào cả, không đáy cứ nhét đồ vô, tao thêm chỗ. xin qua dây kéo, khóa, ngăn, cánh cửa, mở ra
+    nhét đồ vô
+    tuCuaTui[i] = món đồ bỏ vô -> Mảng
+    tuCuaTui.add(món đồ bỏ vô) -> Bỏ đồ vô qua hành động của tủ, không sờ trực tiếp ngăn chứa thứ [i], bỏ vô tự tủ lo
+    bên trong
+    -> VẪN CODE NHƯ XƯA NAY: NEW TỦ, .GỌI HÀM HÀNH ĐỘNG CỦA TỦ. ĐỒ NEW RIÊNG ĐỂ BỎ VÔ. MUA TỦ VÀ MUA ĐỒ VÀ CẤT ĐỒ
+
+    NEW 3 LOẠI TỦ NGÀY, GIỐNG CÁC THƯƠNG HIỆU TÚI XÁCH BALO BẠN MUA
+    ArrayList, Vector                      |         HashSet, TreeSet            |         HashMap, TreeMap
+    addĐồ(Món đồ khác đi mua) giống như cất đồ vào tủ ngăn thứ [i] nào đó nếu nhìn theo kiểu mảng
+    Các tủ này đều chứa tham chiếu, để linh hoạt trong việc các obj cứ new ra trong việc để các món đồ. Giống như việc
+    bệnh nhâu đâu cần dồn vào phòng bác sĩ, mà bác sĩ vẫn điều trị được vì có danh sách bệnh nhân trong tủ hồ sơ
+
+    TỦ THẬT,  TÚI THẬT, MUA VỀ ĐỂ XÀI -> new được, không phải là abstract, hoàn hảo để dùng full code và hành động
+----------------------------------------------------------------------------------------------------------------------------------
+Phân loại con:       |  ArrayList, Vector              |         HashSet, TreeSet            |         HashMap, TreeMap          |
+----------------------------------------------------------------------------------------------------------------------------------
+Phân loại cha:       |      List: Danh sách            |            Set: Tập hợp             |          Map: Bộ ánh xạ, từ điển  |
+(abstract/interface) |                                 |                                     |          Bộ Key-Value             |
+----------------------------------------------------------------------------------------------------------------------------------
+                    Vào thứ tự nào ra thứ tự ấy, giống |  HashSet sắp xếp lộn xộn            |                                   |
+                    mảng nâng cao, co giãn kích thước, |  TreeSet sắp xếp tự động            |                                   |
+                    vào trước ngồi ở [0]               |  Không được lặp lại món đồ lân 2    |                                   |
+                    vào sau ngồi ở [1]                 |                                     |                                   |
+----------------------------------------------------------------------------------------------------------------------------------
+Ngoài đời:          | Thống kê số vé bán               | Đếm số người thực sự xem phim,      |                                   |
+                    | Số lượt người mua                | không đếm lượt, mỗi người xuất hiện |                                   |
+                    | Số lượt người ghé thăm           | đúng 1 lần, không đếm hơn dù xem    |                                   |
+                    | Một người có thể đếm nhiều lần   | nhiều lần                           |                                   |
+----------------------------------------------------------------------------------------------------------------------------------
+CÁC TỬ LIST (ARRAY LIST, VECTOR, ...)   |      ĐỀU CHỨA  CO GIÃN NGĂN TỦ, THÍCH THÊM THÌ THÊM, KHÔNG ĐÁY, CHỈ LƯU THAM
+       SET (HASHSET, TREESET)           | ---> CHIẾU, LƯU CON TRỎ, ADD CON TRỎ VÀO, VÙNG NEW MÓN ĐỒ THOẢI MÁI Ở HEAP,
+       MAP (HASHMAP, TREEMAP)           |      ADD VÀ LẤY QUA HÀM, HÀNH ĐỘNG MỞ DÂY KÉO, NGĂN
+
+                                               MẢNG OBJ CŨNG GIỐNG VẬY, CHỨA THAM CHIẾU, LƯU CON TRỎ ADD LẤY QUA [I],
+                                               VÙNG NEW  MÓN ĐỒ THOẢI MÁI TRONG HEAP
+                                               -> GIỐNG QUẢN LÝ DANH SÁCH NGOÀI ĐỜI, TỦ HỒ SƠ

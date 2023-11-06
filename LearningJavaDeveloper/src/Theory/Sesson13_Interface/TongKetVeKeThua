@@ -1,0 +1,27 @@
+========================================================================================================================
+========================================= TỔNG KẾT CHUNG CHO KẾ THỪA====================================================
+| 1. Có sự thừa hưởng đặc điểm, hành vi
+| 2. Có họ hàng, bà con vì chung đặc điểm
+| 3. Liên quan đến cây phân loại, phân loại Obj trong cuộc sống con người (Động vật: Loài, Chi, Họ, Lớp, Bộ, Ngành, ...)
+| 3. IS A KIND OF, đọc 1 chiều: CON là 1 phiên bản của CHA (Hình vuông là 1 hình chữ nhật, con mèo là 1 thú cưng)
+| 4. CON thừa hưởng đặc điểm, hành vi của CHA
+| 5. CHA cụ thể - CON cụ thể:
+|       - Đủ code cho cả 2
+|       - Con có thể @Override nếu muốn, không ép và có thể có dị biệt nếu muốn
+|       - Thực ra đã có từ CHA hoàn hảo rồi
+|       - Khai báo:
+|           + Khai CHA new CHA: Dùng CHA vì CHA quá hoàn hảo
+|           + Khai CHA new CON, đa hình xảy ra, CON qua mặt CHA
+|           + Khai CON new CON
+| 6. CHA trừu tượng - CON:
+|   a. CON trừu tượng: vô sinh, không new được object (vô sinh, không new được Obj)
+|   b. CON phải code cho CHA:
+|       - Con bắt buộc phải @Override cho CHA
+|       - CON có thể dị biệt nếu muốn
+|       - Phải hoàn tất giấc mơ của CHA, vì CHA chỉ nói, chưa làm, chưa hoàn hảo (Chỉ có tên method nhưng chưa có thân hàm)
+|        - Khai báo:
+|           + Khai CHA new CHA { ... @Override}; : Anonymous do làm biếng tạo hàm con sẵn
+|               -> Tạo Obj rồi, new CHA mà phải thêm code thì không phải là CHA
+|           + Khai CHA new CON: Đa hình xảy ra, CON qua mặt hàm @ CHA
+|           + Khai CON new CON
+
