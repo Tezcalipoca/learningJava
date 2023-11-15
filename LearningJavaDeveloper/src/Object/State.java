@@ -75,7 +75,7 @@ public class State {
         x.showProfile(); // output: |N19DCCN024|Bùi Tuấn Trường          |2001| 9,0|
     }
 
-    // --> HAI OBJECT TRỎ CÙNG MỘT TỌA ĐỘ
+    // --> HAI OBJECT TRỎ CÙNG MỘT TỌA ĐỘ - 2 CHÀNG TRỎ 1 NÀNG
     public static void checkObjectV4() {
         Student s1 = new Student("N19DCCN024", "Bảo Chính", 2001, 9.0);
         Student s2 = s1; // 2 object cùng trỏ đến một tọa độ

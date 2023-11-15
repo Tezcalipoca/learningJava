@@ -1,0 +1,82 @@
+1. public class Student{
+    private String id;
+
+    private int yob; //4 byte
+
+    private double gpa; // 8 byte
+
+    private Integer yob; -> Tốn RAM hơn vì đây là biến OBJ, 1 vùng RAM chứa biến con trỏ 1 vùng RAM chứa vùng new
+                            new Integer(2003)
+    ...
+}  -> ENCAPSULATE
+
+------------------------------- CLASS TRAI BAO - WRAPPER CLASS (BOXING/UNBOXING) -----------------------------------
+1. OOP: Lập trình hướng về đối tượng, toàn chơi Obj. Java chính là OOP
+2. Mọi thứ trong Code Java phải là Obj!
+3. Hiện nay trong Java có 2 loại data type: PRIMITIVE vs OBJ
+    3.1. PRIMITIVE: 8 kểu dữ liệu nguyên thủy
+        - byte
+        - short
+        - int
+        - long
+        - float
+        - double
+        - char
+        - boolean
+    int yob = 2003; -> Tốn đúng 1 vùng RAM 4 byte, ON-OFF TRANS để ra được 2003
+    3.2 OBJECT: kiểu đối tượng, trong nó phức tạp hơn, không chỉ là value lấy ra xài luôn
+        - Tốn 2 vùng RAM:
+            1 con trỏ/biến obj        =       new Obj nào đó
+           lưu tọa độ vùng new             (một loạt value khác)
+        - Scanner, Math, String, Dog, Cat, Racer, Cabinet, Shelf, StringTokenizer, File, FileInputStream... bên trong
+        class từa lưa info + hàm()
+
+4. TÌM CÁCH BIẾN JAVA THUẦN 100% OBJECT! BIẾN PRIMITIVE THÀNH OBJECT (Không phải ép kiểu/cast())
+5. JAVA COLLECTIONS FRAMEWORK: TẬP HỢP TÚI, TÚI CHỈ CHỨA CON TRỎ/BIẾN THAM CHIẾU. LIST, SET, MAP CHỈ CHỨA CON TRỎ.
+    => VẬY NÓ KHÔNG CHỨA ĐƯỢC int, long, double (mấy thằng này là primitive)
+    List<int> arr = new ArrayList(); -> Không chấp nhận vì chỉ chứa con trỏ, int không là con trỏ, lấy value int xài luôn
+                                        chứ không chấm như con trỏ, con trỏ chỉ chấm mới xài được
+6. DÃY SỐ NGUYÊN, DÃY SỐ TỰ NHIÊN LÀ CÓ THẬT, NẾU CHƠI MẢNG THÌ ÉP NHAU QUÁ, TA PHẢI BIẾN int THÀNH OBJ mới okie!
+    List<Integer> arr = new ArrayList();
+                  arr.add(10)
+    Map<Integer, String> không bao giờ có Map<int, String>
+    Map<Student, String>
+7. Số 1, 2, 3, 5, 7, 05, -10 -> int -> class Integer nguyên không lẻ, có giá trị/đặc điểm
+    - Mô tả đặc điểm:
+        + Giá trị/đại lượng: 1, 2
+        + Nguyên con, trọn vẹn không lẻ miếng nào về giá trị
+    - Mô tả hành động:
+        + 1 < 2
+        + 3 > 0
+        + So sánh các đại lượng của nhau
+        + Giá trị tính theo vị trí
+    => HÓA RA CÁI ĐÁM TRÊN CÓ CHUNG ĐẶC ĐIỂM LÀ KHÔNG LẺ MIẾNG NÀO, MANG GIÁ TRỊ CÒN SO SÁNH ĐƯỢC LẪN NHAU -> nhóm INTERGER
+        -> class Integer xuất hiện/ nhóm những thằng không lẻ miếng nào
+       => Vậy 7 đối tượng trên thuộc class Integer, xuất hiện để nó bao cái value int thành một Object
+       Integer sẽ bao cái OBJ lại, thành 1 Obj. Mọi thứ trong Java là Obj
+public class Integer{
+    private int value;
+    public Integer(int value){
+    this.value = vales;
+    }
+    // hàm get/set()
+    // Các hàm siêu đặc biệt
+    public static int parseInt(String num){
+        //Biến chuỗi thành số để đem xài
+    }
+}
+
+8. Integer n = new Integer(5);
+    - Con số 5 primitive được gói vào 1 vùng RAM bự hơn
+    - Vùng clone khuôn Integer
+    - gói: wrap
+    - Integer được gọi là class gói lại các con int primitive
+     -> Wrapper class
+9. int yob = Integer.parseInt(sc.nextLine())
+10. XÀI INTEGER THÌ SAO: CỰC KÌ LINH HOẠT, CÓ NHIỀU CÁCH
+11. CÂN NHẮC KHI XÀI INTEGER, KHI NÀO ĐÒI HỎI THÌ MỚI LÀM VÌ TỐN RAM. KHÔNG CÓ GÌ ĐẶC BIỆT THÌ int CHO TIẾT KIỆM RAM + NHANH
+    - int yob = 2003; -> 4 byte trong RAM
+    Integer yob = new Integer(2003);
+    Integer yob = 2003; // new ngầm, vẫn new nhưng không viết ra -> Boxing, đóng hộp thằng PRIMITIVE/LITERAL
+    int a = yob; -> 1 thằng là con trỏ, 1 thằng là primitive. -> Mở vùng RAM bự Integer ra, lôi đúng value int ra xài
+                -> Unboxing

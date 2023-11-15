@@ -5,40 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="891f54b5-8e94-41c8-9dc1-7ad6ce30905a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson05_Static/[giao.lang] Static.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson06_InputAndTryCatch/[giao.lang] Input and try-catch.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson07_PrimitiveArray/[giao.lang] Array 01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson07_PrimitiveArray/[giao.lang] Array 02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson09_Sorting/[giao.lang] Sorting 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson09_Sorting/[giao.lang] Sorting 2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/AmazingRaceVersion2/AmazingRaceVersion2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Data/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Data/DeathRacer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Data/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Data/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Data/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Giới thiệu Interface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/TongKetVeKeThua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface_version2/OOP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface_version2/Ôn tập Interface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_ReviewAnonymous/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson13_ReviewAnonymous/Review Anonymous Class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/Data/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/Làm sao để làm việc với nhiều OBJ" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/StudentManagement/StudentManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Theory/[giao.lang] OOP Atlas-21.06.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version2/Data/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version2/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version3/Data/Cabinet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version3/Data/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version3/StudentManagement/StudentManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork_version3/Utils/MyToys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClass/Integer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClass/So Sánh 2 Object.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClass/So Sánh n3 với n4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClass/Wrapper Class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClass/WrapperClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Theory/Sesson15_WrapperClassVersionMini/StringClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version2/Data/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version2/Data/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/GhiChu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/GhiChu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/META-INF/LearningJavaDeveloper.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/Main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/Main/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson12_AbstractClass_version4/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson07_PrimitiveArray/Unit7_PrimitiveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson07_PrimitiveArray/Unit7_PrimitiveArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Data/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version2/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version4/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson12_AbstractClass_version4/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_Interface/Giới thiệu Interface" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_Interface/Giới thiệu Interface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_ReviewAnonymous/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_ReviewAnonymous/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_ReviewAnonymous/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson13_ReviewAnonymous/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson14_CollectionsFrameWork/Data/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson14_CollectionsFrameWork/Data/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson14_CollectionsFrameWork/StudentManagement/StudentManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LearningJavaDeveloper/Theory/Sesson14_CollectionsFrameWork/StudentManagement/StudentManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Object/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Giới thiệu Interface" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson13_Interface/Giới thiệu Interface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/Data/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/Data/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/StudentManagement/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Theory/Sesson14_CollectionsFrameWork/StudentManagement/StudentManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,45 +61,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tezca/Downloads/[giao.lang] PetCare System",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "two.files.diff.last.used.file": "D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper/src/Theory/Sesson13_Interface_version2/Tổng kết OOP"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper/src/Theory/Sesson15_WrapperClass&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;D:/workspace/JavaProjects/LearningJava/LearningJavaDeveloper/src/Theory/Sesson13_Interface_version2/Tổng kết OOP&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson15_WrapperClass" />
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson05_Static" />
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson09_Sorting" />
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory" />
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson06_InputAndTryCatch" />
-      <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson07_PrimitiveArray" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson12_AbstractClass_version4" />
       <recent name="D:\workspace\JavaProjects\LearningJava\LearningJavaDeveloper\src\Theory\Sesson11_Inheritance_version4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Theory.Sesson14_CollectionsFrameWork_version3.Data" />
       <recent name="Theory.Sesson12_AbstractClass_version2.Data" />
       <recent name="Theory.Unit9_Sorting" />
       <recent name="Theory" />
       <recent name="Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentManagement">
-    <configuration name="AmazingRaceVersion2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sesson13_Interface.AmazingRaceVersion2.AmazingRaceVersion2" />
+  <component name="RunManager" selected="Application.StringClass">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sesson14_CollectionsFrameWork_version2.Main.Main" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sesson13_Interface.AmazingRaceVersion2.*" />
+          <option name="PATTERN" value="Theory.Sesson14_CollectionsFrameWork_version2.Main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazingRaceVersion2 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sesson13_Interface.AmazingRaceVersion2.AmazingRaceVersion2" />
+    <configuration name="MyToys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sesson14_CollectionsFrameWork_version3.Utils.MyToys" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sesson13_Interface.AmazingRaceVersion2.*" />
+          <option name="PATTERN" value="Theory.Sesson14_CollectionsFrameWork_version3.Utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazingRaceVersion2 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sesson13_Interface.AmazingRaceVersion2.AmazingRaceVersion2" />
+    <configuration name="StringClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sesson15_WrapperClassVersionMini.StringClass" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sesson13_Interface.AmazingRaceVersion2.*" />
+          <option name="PATTERN" value="Theory.Sesson15_WrapperClassVersionMini.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazingRaceVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sesson13_Interface.AmazingRaceVersion2.AmazingRaceVersion2" />
+    <configuration name="Theory.Sesson14_CollectionsFrameWork_version3.StudentManagement.StudentManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sesson14_CollectionsFrameWork_version3.StudentManagement.StudentManagement" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sesson13_Interface.AmazingRaceVersion2.*" />
+          <option name="PATTERN" value="Theory.Sesson14_CollectionsFrameWork_version3.StudentManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Theory.Sesson14_CollectionsFrameWork.StudentManagement.StudentManagement" />
+    <configuration name="WrapperClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Theory.Sesson15_WrapperClass.WrapperClass" />
       <module name="LearningJavaDeveloper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Theory.Sesson14_CollectionsFrameWork.StudentManagement.*" />
+          <option name="PATTERN" value="Theory.Sesson15_WrapperClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentManagement" />
-        <item itemvalue="Application.AmazingRaceVersion2" />
-        <item itemvalue="Application.AmazingRaceVersion2 (3)" />
-        <item itemvalue="Application.AmazingRaceVersion2 (2)" />
-        <item itemvalue="Application.AmazingRaceVersion2 (1)" />
+        <item itemvalue="Application.StringClass" />
+        <item itemvalue="Application.WrapperClass" />
+        <item itemvalue="Application.Theory.Sesson14_CollectionsFrameWork_version3.StudentManagement.StudentManagement" />
+        <item itemvalue="Application.MyToys" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

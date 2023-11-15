@@ -1,8 +1,5 @@
-package Theory.Sesson14_CollectionsFrameWork.Data;
+package Theory.Sesson14_CollectionsFrameWork_version3.Data;
 
-/* Nhắc đến sinh viên, chỉ cần quan tâm: Mã số, tên, năm sinh, chuyên ngành, điểm trung bình -> abstraction
-*  Để biểu diễn được đối tượng này như ngoài đời thực, ta cần khuôn + đặc điểm + hành vi
-*  Che giấu, show ra khi cần thiết -> ENCAPSULATION, gói trọn trong một obj*/
 public class Student {
     private String id;
     private String name;

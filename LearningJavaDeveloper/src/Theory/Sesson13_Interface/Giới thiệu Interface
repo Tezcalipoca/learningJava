@@ -23,7 +23,7 @@ Sóc
 2 bạn chạy xe Exciter rượt theo con Dog, trên đường đua lúc này có Pet và Motor cùng đua, cùng làn đường, đua cùng nhau,
 so kè tốc độ, cùng MẢNG
     - Mô phỏng lại trong lập trình thì Pet và Motor phải cùng mảng -> Mảng nào?
-    Cùng mảng thì phải cùng kiểu data type, vậy nói Pet is kind of Motor hoặc ngược lại -> gẫy
+    Cùng mảng thì phải cùng kiểu data type, vậy nói Pet is kind of Motor hoặc ngược lại -> gãy
 
 Chỉ vì rượt đuổi nhau, nên mới chung đường -> CẢ 2 CÓ CÙNG MỤC ĐÍCH, HÀNH ĐỘNG:
     - Một thằng ép xung để thoát
